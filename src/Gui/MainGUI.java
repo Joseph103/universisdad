@@ -36,6 +36,7 @@ public class MainGUI extends javax.swing.JFrame {
             
       MatriculaAcademica matriculaAcademica;
       ProgramacionAcademica programacionAcademica;
+      form form;
       CancelarCurso cancelarCurso;
       
     public MainGUI(Universidad College) {
@@ -233,10 +234,10 @@ public class MainGUI extends javax.swing.JFrame {
        loginCoordinador.setVisible(false);
        
        
-       programacionAcademica = new ProgramacionAcademica(College,d); 
-       Desktop.add(programacionAcademica);
+       form = new form(); 
+       Desktop.add(form);
  
-       programacionAcademica.setVisible(true);
+       form.setVisible(true);
     }
     
      public class Cancelar implements ActionListener{
